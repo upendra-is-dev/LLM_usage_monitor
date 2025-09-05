@@ -1,0 +1,195 @@
+/* General Layout */
+.App {
+  font-family: 'Inter', sans-serif;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #f5f7fa;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  color: #1d3557;
+}
+
+.subtitle {
+  color: #6c757d;
+  margin-top: 0.5rem;
+}
+
+/* Form Styling */
+.form-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.modern-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.modern-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #1d3557;
+  gap: 0.3rem;
+}
+
+.modern-form input,
+.modern-form select,
+.modern-form textarea {
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+}
+
+.modern-form button {
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #457b9d, #1d3557);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.modern-form button:hover {
+  background: linear-gradient(135deg, #1d3557, #457b9d);
+}
+
+.error {
+  color: crimson;
+  margin-top: 1rem;
+}
+
+.response-card {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #f9fcff;
+}
+
+.response-card pre {
+  white-space: pre-wrap;
+  margin-top: 0.5rem;
+}
+
+/* Dashboard Layout */
+.dashboard {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  background: linear-gradient(135deg, #457b9d, #1d3557);
+  color: white;
+  font-weight: 600;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+}
+
+/* Modern table */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.modern-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.modern-table th,
+.modern-table td {
+  padding: 0.9rem 1rem;
+}
+
+.modern-table th {
+  text-align: left;
+  font-weight: 600;
+  color: #1d3557;
+  background: #f8fafc;
+}
+
+.modern-table td {
+  border-top: 1px solid #eee;
+}
+
+.modern-table tr:nth-child(even) td {
+  background: #fafafa;
+}
+
+.modern-table tr:hover td {
+  background: #eaf6ff;
+  box-shadow: inset 0 0 4px rgba(69,123,157,0.2);
+}
+
+.right {
+  text-align: right;
+}
+
+/* Totals card */
+.totals-list {
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.totals-list li {
+  display: flex;
+  justify-content: space-between;
+  background: #f9fcff;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #e6f2f8;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.totals-list li:hover {
+  transform: translateX(4px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.model {
+  font-weight: 600;
+  color: #1d3557;
+}
+
+.tokens {
+  color: #457b9d;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+}
